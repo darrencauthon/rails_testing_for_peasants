@@ -1,5 +1,6 @@
 class WeatherController < ApplicationController
-  def say_hello
-    "Hello"
+  def index
+    location = Location.current
+    @weather = Weather.get_for location
   end
 end
