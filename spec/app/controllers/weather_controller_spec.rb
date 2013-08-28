@@ -3,7 +3,7 @@ require 'minitest/autorun'
 require 'minitest/spec'
 
 describe WeatherController do
-  it "should say hello" do
-    WeatherController.new.say_hello.must_equal "Hello"
+  it "should be an application controller" do
+    WeatherController.new.is_a?(ApplicationController).must_equal true
   end
 end
